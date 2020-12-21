@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
         }
 
     ]);
-message.channel.send("Kanaal in Lockdown")
+message.channel.send("Een Stafflid heeft dit kanaal in lockdown gedaan")
 
 }
 

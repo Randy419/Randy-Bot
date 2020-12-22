@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
         const role = noRoleUser._roles[index];
         
 
-        noRoleUser.roles.remove(role)
+        noRoleUser.roles.remove(role);
     }
 
        var embed = new discord.MessageEmbed()

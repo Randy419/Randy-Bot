@@ -2,7 +2,8 @@ const discord = require("discord.js");
 
 module.exports.run = async (client, message, args) => {
     
-    if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("sorry jij kan dit niet");
+    
+if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("sorry jij kan dit niet");
 
     var noRoleUser = message.guild.member(message.mentions.user.ferst());
     if(!noRoleUser) return message.channel.send("Geen Gebruiker met deze naam Gevonden");

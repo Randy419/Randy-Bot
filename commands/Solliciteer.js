@@ -77,44 +77,44 @@ createdChannel.setParent(categoryID).then(
 
             
         var vraag1 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: vraag 1")
+        .setTitle("Sollicitatie Den Hoorn: vraag 1")
         .setColor("#00BFFF")
         .setDescription("Wie ben je?, Welke Eenheid")
 
 
         
         var vraag2 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: Vraag 2")
+        .setTitle("Sollicitatie Den Hoorn: Vraag 2")
         .setColor("#00BFFF")
         .setDescription("Waarom wil je staff worden?")
 
         
         var vraag3 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: Vraag 3")
+        .setTitle("Sollicitatie Den Hoorn: Vraag 3")
         .setColor("#00BFFF")
         .setDescription("Waarom ben je anders dan de andere sollicitanten?")
 
         
         var vraag4 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: Vraag 4")
+        .setTitle("Sollicitatie Den Hoorn: Vraag 4")
         .setColor("#00BFFF")
         .setDescription("Wat voor ervaring heb je?")
 
         
         var vraag5 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: Vraag 5")
+        .setTitle("Sollicitatie Den Hoorn: Vraag 5")
         .setColor("#00BFFF")
         .setDescription("Wat zijn je plus punten?")
 
         
         var vraag6 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: Vraag 6")
+        .setTitle("Sollicitatie Den Hoorn: Vraag 6")
         .setColor("#00BFFF")
         .setDescription("Wat zijn je min punten?")
 
         
         var vraag7 = new discord.MessageEmbed()
-        .setTitle("Sollicitatie Rotterdam: Vraag 7")
+        .setTitle("Sollicitatie Den Hoorn: Vraag 7")
         .setColor("#00BFFF")
         .setDescription("Wil je nog wat zeggen?")
         
@@ -155,7 +155,7 @@ createdChannel.setParent(categoryID).then(
                                     .setTitle("Bedankt voor het solliciteren!")
                                     .setColor("00ff00")
                                     .setTimestamp()
-                                    .setFooter("Rotterdam © 2020")
+                                    .setFooter("Den Hoorn © 2020")
                                     .setDescription(`**Vraag 1:** \n${antwoord1}\n\n**Vraag 2:** \n${antwoord2}\n\n**Vraag 3:**\n${antwoord3}\n\n**Vraag 4:** \n${antwoord4}\n\n**Vraag 5:** \n${antwoord6}\n\n**Vraag 6:**\n${antwoord6}\n\n**Vraag 7:**\n${antwoord7}`);
                                     settedParent.bulkDelete(6).then(
                                         settedParent.send(uitkomst)
@@ -189,7 +189,7 @@ settedParent.send(`<@${persoon2}>, <@&${staff}>`).then (msg => msg.delete({ time
 
 
 module.exports.help = {
-    name: "solliciteer",
+    name: "",
     description: "Geeft al de verschillende commands",
     category: "Informatie"
 }

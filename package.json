@@ -15,7 +15,7 @@
   "author": "Randy",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.2.0",
     "ms": "^2.1.2",
     "mysql": "^2.18.1",

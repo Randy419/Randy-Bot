@@ -152,7 +152,19 @@ client.on("message", async message => {
     // }
 
 
-    var prefix = botConfig.prefix;
+    // var prefix = botConfig.prefix;
+
+    var prefixes = JSON.parse(fs.readFileSync("./prefixes.json"));
+
+    if(!prefixes[message.guild.id]){
+        prefixes[message.guild.id] = {
+        prefixes: botconfig.prefix
+    };
+}
+
+
+    var prefix = prefixes[message.guild.id].prefixes;
+    
 
     var messageArray = message.content.split(" ");
 
